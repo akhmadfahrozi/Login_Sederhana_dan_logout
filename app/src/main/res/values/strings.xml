@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">Pendaftaran</string>
+    <string-array name="sortby">Pilih
+        <item>Samarinda</item>
+        <item>Balikpapan</item>
+        <item>Bontang</item>
+        <item>Kukar</item>
+        <item>Kutim</item>
+        <item>Kubar</item>
+        <item>Mahulu</item>
+        <item>Paser</item>
+        <item>Berau</item>
+
+    </string-array>
+    <string-array name="sortby1">Pilih
+        <item>Sumber Daya Manusia dan Organisasi</item>
+        <item>Pengawasan Hubungan Antar Lembaga</item>
+        <item>Penindakan Penanganan Pelanggaran</item>
+
+    </string-array>
+    <string name="ketua">Ketua</string>
+    <string-array name="agama">Pilih
+        <item>Islam</item>
+        <item>Protestan</item>
+        <item>Katolik</item>
+        <item>Hindu</item>
+        <item>Budha</item>
+        <item>Kong Hu Cu</item>
+    </string-array>
+    <string-array name="pendidikan">Pilih
+        <item>SMA/SMK/Madrasah</item>
+        <item>Diploma</item>
+        <item>S1</item>
+        <item>S2</item>
+        <item>Doktor (S3)</item>
+
+    </string-array>
+    <string-array name="pekerjaan">Pilih
+        <item>Akademisi / Guru</item>
+        <item>Ahli/Profesional</item>
+        <item>Buruh / Tani</item>
+        <item>TNI / Polri</item>
+        <item>Wiraswasta</item>
+        <item>PNS</item>
+    </string-array>
+    <string name="ket">Nama Dan Foto Yang terkait dengan akun google anda akan direkam saat anda mengupload file dan mengirimkan formulir ini</string>
+    <string name="ket1">Isikan Nama Kecamatannya Langsung tanpa "Kec" /  "Kecamatan"(HURUF KAPITAL)</string>
+</resources>

@@ -1,0 +1,819 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C9B6B6"
+    tools:context=".hello">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/c1"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            app:cardBackgroundColor="#FFF"
+            app:cardCornerRadius="15dp">
+
+            <TextView
+                android:id="@+id/judul"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="20dp"
+                android:text="DATA PANWASCAM KALTIM 2020"
+                android:textColor="#000"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:gravity="center"
+                android:paddingBottom="30dp"
+                android:text="@string/ket"
+                android:textColor="#000"
+                android:textSize="16dp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/c2"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_below="@+id/c1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            app:cardBackgroundColor="#FFF"
+            app:cardCornerRadius="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="25sp"
+                android:textStyle="bold"
+                android:paddingTop="15sp"
+                android:text="Nama Panwascam *"
+                android:textColor="#000"
+                android:textSize="20dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="25sp"
+                android:id="@+id/nama"
+                android:layout_marginRight="25sp"
+                android:layout_marginBottom="24dp"
+                android:hint="Jawaban Anda" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/c3"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_below="@+id/c2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            app:cardBackgroundColor="#FFF"
+            app:cardCornerRadius="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="25sp"
+                android:textStyle="bold"
+                android:paddingTop="15sp"
+                android:text="Kabupaten/Kota *"
+                android:textColor="#000"
+                android:textSize="20dp" />
+
+            <RelativeLayout
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="25sp"
+                android:layout_marginRight="25sp"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/bbt">
+
+                <Spinner
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="bottom"
+                    android:id="@+id/kota"
+                    android:entries="@array/sortby" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/c4"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_below="@+id/c3"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            app:cardBackgroundColor="#FFF"
+            app:cardCornerRadius="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="25sp"
+                android:paddingTop="15sp"
+                android:textStyle="bold"
+                android:text="Kecamatan *"
+                android:textColor="#000"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="bottom"
+                android:textColor="#362D2D"
+                android:paddingLeft="25sp"
+                android:layout_marginBottom="55dp"
+                android:text="@string/ket1"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="25sp"
+                android:id="@+id/kecsmstsn"
+                android:layout_marginRight="25sp"
+                android:layout_marginBottom="20dp"
+                android:hint="Jawaban Anda"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/c5"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_below="@+id/c4"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            app:cardBackgroundColor="#FFF"
+            app:cardCornerRadius="10dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="25sp"
+            android:paddingTop="15sp"
+            android:text="NIK *"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:textSize="20dp" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="25sp"
+                android:layout_marginRight="25sp"
+                android:layout_marginBottom="24dp"
+                android:id="@+id/nik"
+                android:inputType="date"
+                android:hint="Jawaban Anda" />
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/c6"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_below="@+id/c5"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            app:cardBackgroundColor="#FFF"
+            app:cardCornerRadius="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="25sp"
+                android:textStyle="bold"
+                android:paddingTop="15sp"
+                android:text="Divisi *"
+                android:textColor="#000"
+                android:textSize="20dp" />
+
+            <RelativeLayout
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="25sp"
+                android:layout_marginRight="25sp"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/bbt">
+
+                <Spinner
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/divisi"
+                    android:layout_gravity="bottom"
+                    android:entries="@array/sortby1" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/c7"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_below="@+id/c6"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            app:cardBackgroundColor="#FFF"
+            app:cardCornerRadius="10dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="25sp"
+            android:textStyle="bold"
+            android:paddingTop="15sp"
+            android:text="Jabatan *"
+            android:textColor="#000"
+            android:textSize="20dp" />
+            <RadioGroup
+                android:id="@+id/radio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:paddingLeft="25sp"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/Ketua"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ketua" />
+
+                <RadioButton
+                    android:id="@+id/Anggota"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Anggota" />
+            </RadioGroup>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/c8"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_below="@+id/c7"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            app:cardBackgroundColor="#FFF"
+            app:cardCornerRadius="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="25sp"
+            android:textStyle="bold"
+            android:paddingTop="15sp"
+            android:text="Tempat Lahir*"
+            android:textColor="#000"
+            android:textSize="20dp" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="25sp"
+                android:layout_marginRight="25sp"
+                android:id="@+id/lahir"
+                android:layout_marginBottom="24dp"
+                android:hint="Jawaban Anda" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/c9"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_below="@+id/c8">
+
+
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/c10"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_below="@+id/c9"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            app:cardBackgroundColor="#FFF"
+            app:cardCornerRadius="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="25sp"
+                android:textStyle="bold"
+                android:paddingTop="15sp"
+                android:text="Tanggal Lahir *"
+                android:textColor="#000"
+                android:textSize="20dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="25sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="--/--/---- *"
+                android:id="@+id/hasil"
+                android:layout_marginBottom="10dp"
+                android:textColor="#7A7272"
+                android:textSize="20dp" />
+
+
+            <Button
+                android:id="@+id/date1"
+                android:layout_width="120dp"
+                android:layout_gravity="bottom"
+                android:layout_height="50dp"
+                android:text="Pilih"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/bg"
+                android:layout_marginLeft="25sp"
+                android:textColor="#000"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/c11"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_below="@+id/c10"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            app:cardBackgroundColor="#FFF"
+            app:cardCornerRadius="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="25sp"
+                android:textStyle="bold"
+                android:paddingTop="15sp"
+                android:text="Agama *"
+                android:textColor="#000"
+                android:textSize="20dp" />
+
+            <RelativeLayout
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="25sp"
+                android:layout_marginRight="25sp"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/bbt">
+
+                <Spinner
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="bottom"
+                    android:id="@+id/agama"
+                    android:entries="@array/agama" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/c12"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_below="@+id/c11"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            app:cardBackgroundColor="#FFF"
+            app:cardCornerRadius="10dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="25sp"
+                android:textStyle="bold"
+                android:paddingTop="15sp"
+                android:text="Jenis Kelamin*"
+                android:textColor="#000"
+                android:textSize="20dp" />
+            <RadioGroup
+                android:id="@+id/radio1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:paddingLeft="25sp"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/Laki"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Laki Laki" />
+
+                <RadioButton
+                    android:id="@+id/Perempuan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Perempuan" />
+            </RadioGroup>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/c13"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_below="@+id/c12"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            app:cardBackgroundColor="#FFF"
+            app:cardCornerRadius="10dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="25sp"
+                android:textStyle="bold"
+                android:paddingTop="15sp"
+                android:text="Status Perkawinan*"
+                android:textColor="#000"
+                android:textSize="20dp" />
+            <RadioGroup
+                android:id="@+id/radio2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:paddingLeft="25sp"
+                android:paddingTop="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/Belum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Belum Kawin" />
+
+                <RadioButton
+                    android:id="@+id/Kawin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kawin" />
+                <RadioButton
+                    android:id="@+id/cerai"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cerai" />
+            </RadioGroup>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/c14"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_below="@+id/c13"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            app:cardBackgroundColor="#FFF"
+            app:cardCornerRadius="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="25sp"
+                android:textStyle="bold"
+                android:paddingTop="15sp"
+                android:text="Alamat*"
+                android:textColor="#000"
+                android:textSize="20dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="25sp"
+                android:id="@+id/almt"
+                android:layout_marginRight="25sp"
+                android:layout_marginBottom="29dp"
+                android:hint="Jawaban Anda" />
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/c15"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_below="@+id/c14"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            app:cardBackgroundColor="#FFF"
+            app:cardCornerRadius="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="25sp"
+                android:textStyle="bold"
+                android:paddingTop="15sp"
+                android:text="Nomor Telp*"
+                android:textColor="#000"
+                android:textSize="20dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="25sp"
+                android:id="@+id/tlp"
+                android:inputType="phone"
+                android:layout_marginRight="25sp"
+                android:layout_marginBottom="29dp"
+                android:hint="Jawaban Anda" />
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/c16"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_below="@+id/c15"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            app:cardBackgroundColor="#FFF"
+            app:cardCornerRadius="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="25sp"
+                android:textStyle="bold"
+                android:paddingTop="15sp"
+                android:text="Email*"
+                android:textColor="#000"
+                android:textSize="20dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="25sp"
+                android:id="@+id/email"
+                android:layout_marginRight="25sp"
+                android:layout_marginBottom="29dp"
+                android:hint="Jawaban Anda" />
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/c17"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_below="@+id/c16"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            app:cardBackgroundColor="#FFF"
+            app:cardCornerRadius="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="25sp"
+                android:textStyle="bold"
+                android:paddingTop="15sp"
+                android:text="Pendidikan*"
+                android:textColor="#000"
+                android:textSize="20dp" />
+
+            <RelativeLayout
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="25sp"
+                android:layout_marginRight="25sp"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/bbt">
+
+                <Spinner
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="bottom"
+                    android:id="@+id/pendidikan"
+                    android:entries="@array/pendidikan" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/c18"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_below="@+id/c17"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            app:cardBackgroundColor="#FFF"
+            app:cardCornerRadius="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="25sp"
+                android:textStyle="bold"
+                android:paddingTop="15sp"
+                android:text="Pekerjaan Sebelumnnya*"
+                android:textColor="#000"
+                android:textSize="20dp" />
+
+            <RelativeLayout
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="25sp"
+                android:layout_marginRight="25sp"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/bbt">
+
+                <Spinner
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="bottom"
+                    android:id="@+id/pekerjaan"
+                    android:entries="@array/pekerjaan" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/c19"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_below="@+id/c18"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            app:cardBackgroundColor="#FFF"
+            app:cardCornerRadius="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="25sp"
+                android:textStyle="bold"
+                android:paddingTop="15sp"
+                android:text="Tanngal Pengangkatan*"
+                android:textColor="#000"
+                android:textSize="20dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="25sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="--/--/---- *"
+                android:id="@+id/hasil1"
+                android:layout_marginBottom="10dp"
+                android:textColor="#7A7272"
+                android:textSize="20dp" />
+
+
+            <Button
+                android:id="@+id/date2"
+                android:layout_width="120dp"
+                android:layout_gravity="bottom"
+                android:layout_height="50dp"
+                android:text="Pilih"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/bg"
+                android:layout_marginLeft="25sp"
+                android:textColor="#000"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/c20"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_below="@+id/c19"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            app:cardBackgroundColor="#FFF"
+            app:cardCornerRadius="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="25sp"
+            android:textStyle="bold"
+            android:paddingTop="15sp"
+            android:text="NO SK*"
+            android:textColor="#000"
+            android:textSize="20dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="25sp"
+            android:id="@+id/sk"
+            android:layout_marginRight="25sp"
+            android:layout_marginBottom="29dp"
+            android:hint="Jawaban Anda" />
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/c21"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_below="@+id/c20"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            app:cardBackgroundColor="#FFF"
+            app:cardCornerRadius="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="25sp"
+                android:textStyle="bold"
+                android:paddingTop="15sp"
+                android:text="Pengalaman Kepemiluan*"
+                android:textColor="#000"
+                android:textSize="20dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="25sp"
+                android:id="@+id/pengalaman"
+                android:layout_marginRight="25sp"
+                android:layout_marginBottom="29dp"
+                android:hint="Jawaban Anda" />
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/c22"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_below="@+id/c21"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            app:cardBackgroundColor="#FFF"
+            app:cardCornerRadius="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="25sp"
+            android:textStyle="bold"
+            android:paddingTop="15sp"
+            android:text="Foto*"
+            android:textColor="#000"
+            android:textSize="20dp" />
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Tambahkan FIle"
+            android:textColor="#3F51B5"
+            android:background="@drawable/bbt"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="left|bottom"
+            android:id="@+id/filePicker"/>
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="100dp"
+            android:layout_gravity="right|center"
+            android:layout_marginRight="20dp"
+            android:id="@+id/imagePreview"
+            android:scaleType="centerCrop"/>
+        </androidx.cardview.widget.CardView>
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Kirim"
+            android:layout_marginLeft="21dp"
+            android:background="#ABF00000"
+            android:layout_below="@+id/c22"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="32dp"
+            android:id="@+id/upload_file"/>
+
+    </RelativeLayout>
+
+
+
+</ScrollView>
